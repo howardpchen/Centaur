@@ -1,0 +1,1733 @@
+<QUIZ>
+
+<!-- The URL base where we can find the images.  Defaults to root of domain if not set. -->
+<URLBASE>/centaur/howardcxr/images/</URLBASE>
+<NOTRACKMODULE>1101</NOTRACKMODULE>
+<NOCONFIRM/> <!-- Feedback given immediately after clicking a choice -->
+<TIMER>15</TIMER>
+<ID>1001</ID> <!-- Pick a number up to 11 digits for ID. -->
+<AUTHOR>Howard Roth, MD; Po-Hao Chen, MD, MBA; Alexander Ruutiainen, MD; Tessa Cook, MD, PhD</AUTHOR>
+<TITLE>Subtle chest radiograph findings.</TITLE>
+<!--
+    Cover sheet contains a short blurb about the survey/quiz that 
+    follows.  At the end of the cover sheet the user will be given
+    a chance to log in, create an account, or continue as Guest. 
+    Relevant disclosures should go here.
+
+    Data will not be collected if the user chooses Guest.
+
+    HTML is supported.
+-->
+
+
+<COVER>
+&lt;b&gt;
+Protocol Title:&lt;/B&gt; Web-based radiology education (IRB Protocol # 820028)
+
+&lt;p&gt;
+&lt;B&gt;Principal Investigators:&lt;/B&gt; Alexander Ruutiainen MD, Howard Roth MD, Po-Hao Chen MD, MBA and Tessa Cook, MD PhD; Department of Radiology, Hospital of the University of Pennsylvania, Philadelphia, PA (215-662-4000)
+ &lt;P&gt;
+&lt;B&gt;Your completion of this module is anonymous and voluntary.&lt;/B&gt; We would appreciate your participation in our research study. The central purpose of our study is to assess the use of web-based modules in radiology education. We will not attempt to identify you or your data individually. If you agree to participate, your anonymous responses will be used for research purposes only. Your responses may be used to design novel web based modules for enhancing radiology education. There is no direct benefit to you if you agree. Your alternatives would be to either not complete the module or to opt out of the research; if you opt out of the research portion of the module, you will still be allowed to complete the learning module, but your data and progress will not be stored. There is no risk to you because the module is anonymous. You will not be paid for participation. No matter what you decide to do, this will not affect your career/training. If you self-identify as a prisoner or neonate, we ask that you opt out of this research.
+ &lt;P&gt;
+The goal of the Centaur modules is to improve specific aspects of radiology education. As such, we hope that you will learn valuable skills by completing them. Nevertheless, the educational value of these modules is as of yet unproven. As medicine is an ever-changing field, you should use caution in relying solely on a single educational resource, including this one, for the diagnosis of pathology in a real patient population. Although the modules are open to the general public, laymen and patients should approach this material with caution and in consultation with their treating physician.
+&lt;P&gt;
+&lt;i&gt;
+If you have any question, concerns, or complaints regarding this survey or your participation, you should speak with the Principal Investigators listed above or another designated research team member.  If they cannot be contacted or if you want to talk to someone other than those working on the study, you may contact the Penn Office of Regulatory Affairs with any questions, concerns, or complaints by calling (215) 898-2614.
+
+&lt;/i&gt;
+
+</COVER>
+
+<QUESTION>
+<TEXT>
+Before we get started, please answer two short questions.
+</TEXT>
+</QUESTION>
+
+<QUESTION>
+<REQUIRED/> 
+<TEXT>
+
+Please indicate your level of medical training:
+&lt;table align=center width=500&gt;&lt;TR&gt;&lt;TD&gt;
+&lt;div class="radiobuttons"&gt;
+&lt;input type="radio" name="training" id="traNone" onClick="enableNext()" value="No medical training"&gt;&lt;label for="traNone"&gt;No medical training&lt;/label&gt;&lt;BR&gt;
+&lt;input type="radio" name="training" id="traMedS" onClick="enableNext()" value="Student"&gt;&lt;label for="traMedS"&gt;Medical Student&lt;/label&gt;&lt;BR&gt;
+&lt;input type="radio" name="training" id="traRes" onClick="enableNext()" value="MedSurg Resident"&gt;&lt;label for="traRes"&gt;Medical/Surgical resident&lt;/label&gt;&lt;BR&gt;
+&lt;input type="radio" name="training" id="traRadRes" onClick="$(function() {enableNext(); document.getElementById('RadResTraining').disabled = false;})" value="Radiology Resident"&gt;&lt;label for="traRadRes"&gt;Radiology Resident/TY&lt;/label&gt;
+    &lt;select name="RadResTraining" id="RadResTraining" disabled&gt;
+        &lt;option value="TY"&gt;Transitional
+        &lt;option value="R1"&gt;1st Year
+        &lt;option value="R2"&gt;2nd Year
+        &lt;option value="R3"&gt;3rd Year
+        &lt;option value="R4"&gt;4th Year
+    &lt;/select&gt;
+    
+    &lt;BR&gt;
+&lt;input type="radio" name="training" id="traRadFel" onClick="enableNext()" value="Radiology Fellow"&gt;&lt;label for="traRadFel"&gt;Radiology fellow&lt;/label&gt;&lt;BR&gt;
+&lt;input type="radio" name="training" id="traRadAttn" onClick="enableNext()" value="Radiology Attending"&gt;&lt;label for="traRadAttn"&gt;Radiology attending&lt;/label&gt;&lt;BR&gt;
+&lt;input type="radio" name="training" id="traOther" onClick="$(function(){ document.getElementById('trainingOther').disabled = false;})" value="Other"&gt;&lt;label for="traOther"&gt;Other&lt;/label&gt;&lt;input type="text" id="trainingOther" name="trainingOther" size=10 disabled onkeypress="$(function()  { if (document.getElementById('trainingOther').value != '')  { enableNext(); } })"
+
+&gt;&lt;BR&gt;
+
+&lt;/div&gt;
+
+&lt;/table&gt;
+&lt;/center&gt;
+
+</TEXT>
+</QUESTION>
+
+<QUESTION>
+<REQUIRED/>
+<TEXT>
+
+Approximately how many months of training/practice do you have in the interpretation of chest radiographs?
+
+</TEXT>
+<ANSWER><TEXT>None</TEXT></ANSWER>
+<ANSWER><TEXT>1 Month</TEXT></ANSWER>
+<ANSWER><TEXT>2 Months</TEXT></ANSWER>
+<ANSWER><TEXT>3-4 Months</TEXT></ANSWER>
+<ANSWER><TEXT>5+ Months</TEXT></ANSWER>
+
+</QUESTION>
+
+<QUESTION>
+<TEXT>
+
+&lt;H2&gt;Instructions&lt;/H2&gt;
+
+As you will be interpreting radiographs, at least a 10" screen is recommended.  If possible, enter full screen mode on your browser now.  If you are using a Desktop browser, this is done using the &lt;B&gt;F11&lt;/B&gt; key.  &lt;P&gt;
+
+For each case, please identify the pulmonary abnormality and laterality, or state that the radiograph is normal.  Possible pathologies include:
+
+&lt;UL&gt;
+&lt;LI&gt;Normal (no pathology)
+&lt;LI&gt;Pneumothorax
+&lt;LI&gt;SPN (Solitary pulmonary nodule)
+&lt;LI&gt;FC (Focal consolidation)
+&lt;/UL&gt;
+
+We will begin with a tutorial case.
+
+</TEXT>
+</QUESTION>
+<QUESTION>
+<FEEDBACK/>
+<NOTIMER/>
+<TEXT>
+Familiarize yourself with the answer choices. They are the same throughout the entire module. (SPN = Solitary pulmonary nodule.  FC = Focal consolidation) &lt;p&gt;
+Tablet users, try both Landscape and Portrait orientation and use the one that works best.  &lt;p&gt;
+Adjust the brightness of your screen so you can interpret the displayed radiograph. &lt;p&gt;
+Click on "Left Pneumothorax" when you are ready.  &lt;p&gt;
+</TEXT>
+
+<IMG>tutorial.jpg</IMG>
+<ANSIMG>tutorial_a.jpg</ANSIMG>
+
+<ANSWER><TAG>Tutorial</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Tutorial</TAG><TEXT>Left Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Tutorial</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Tutorial</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Tutorial</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Tutorial</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Tutorial</TAG><TEXT>Right FC</TEXT></ANSWER>
+
+</QUESTION>
+<QUESTION>
+<NOTIMER/>
+<TEXT>
+&lt;p&gt;
+You will get immediate feedback on your responses, and the the finding will be pointed out on the radiograph. &lt;/p&gt;
+</TEXT>
+</QUESTION>
+
+<QUESTION>
+<NOTIMER/>
+<TEXT>
+&lt;p&gt;
+A timer is available in the bottom right hand corner.  You will get a full &lt;b&gt;15 seconds&lt;/b&gt; for each case.  &lt;p&gt;
+
+You may drag the timer to move it, including moving it off screen to hide it.  &lt;p&gt;
+
+The timer for each case starts after the image is displayed.&lt;p&gt;
+
+</TEXT>
+</QUESTION>
+
+<QUESTION>
+<NOTIMER/>
+<TEXT>
+&lt;p&gt;
+This module should take about 20 minutes.
+&lt;p&gt;
+You are ready to begin.  Click "Next>>" to start your first case.
+
+</TEXT>
+</QUESTION>
+
+
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>2.jpg</IMG>
+<ANSIMG>2A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>90.jpg</IMG>
+<ANSIMG>90A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>99.jpg</IMG>
+<ANSIMG>99A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>3.jpg</IMG>
+<ANSIMG>3A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>4.jpg</IMG>
+<ANSIMG>4A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>59.jpg</IMG>
+<ANSIMG>59A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>5.jpg</IMG>
+<ANSIMG>5A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>53.jpg</IMG>
+<ANSIMG>53A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>7.jpg</IMG>
+<ANSIMG>7A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>9.jpg</IMG>
+<ANSIMG>9A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>75.jpg</IMG>
+<ANSIMG>75A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>11.jpg</IMG>
+<ANSIMG>11A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>12.jpg</IMG>
+<ANSIMG>12A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>56.jpg</IMG>
+<ANSIMG>56A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>13.jpg</IMG>
+<ANSIMG>13A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>14.jpg</IMG>
+<ANSIMG>14A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>93.jpg</IMG>
+<ANSIMG>93A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>96.jpg</IMG>
+<ANSIMG>96A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>74.jpg</IMG>
+<ANSIMG>74A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+
+
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>16.jpg</IMG>
+<ANSIMG>16A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+<IMG>49.jpg</IMG>
+<ANSIMG>49A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>6.jpg</IMG>
+<ANSIMG>6A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>50.jpg</IMG>
+<ANSIMG>50A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>110.jpg</IMG>
+<ANSIMG>110A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>8.jpg</IMG>
+<ANSIMG>8A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>55.jpg</IMG>
+<ANSIMG>55A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>1.jpg</IMG>
+<ANSIMG>1A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>58.jpg</IMG>
+<ANSIMG>58A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>65.jpg</IMG>
+<ANSIMG>65A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>15.jpg</IMG>
+<ANSIMG>15A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>77.jpg</IMG>
+<ANSIMG>77A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>80.jpg</IMG>
+<ANSIMG>80A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>97.jpg</IMG>
+<ANSIMG>97A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>10.jpg</IMG>
+<ANSIMG>10A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>100.jpg</IMG>
+<ANSIMG>100A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>101.jpg</IMG>
+<ANSIMG>101A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>86.jpg</IMG>
+<ANSIMG>86A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>33.jpg</IMG>
+<ANSIMG>33A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>34.jpg</IMG>
+<ANSIMG>34A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>35.jpg</IMG>
+<ANSIMG>35A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>36.jpg</IMG>
+<ANSIMG>36A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>37.jpg</IMG>
+<ANSIMG>37A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>38.jpg</IMG>
+<ANSIMG>38A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>39.jpg</IMG>
+<ANSIMG>39A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>40.jpg</IMG>
+<ANSIMG>40A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>41.jpg</IMG>
+<ANSIMG>41A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>42.jpg</IMG>
+<ANSIMG>42A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>43.jpg</IMG>
+<ANSIMG>43A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>44.jpg</IMG>
+<ANSIMG>44A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>45.jpg</IMG>
+<ANSIMG>45A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>46.jpg</IMG>
+<ANSIMG>46A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>47.jpg</IMG>
+<ANSIMG>47A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+<IMG>48.jpg</IMG>
+<ANSIMG>48A.jpg</ANSIMG>
+<ANSWER><TAG>Normal</TAG><TEXT>Normal</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Normal</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Normal</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>60.jpg</IMG>
+<ANSIMG>60A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>64.jpg</IMG>
+<ANSIMG>64A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>66.jpg</IMG>
+<ANSIMG>66A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>67.jpg</IMG>
+<ANSIMG>67A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>68.jpg</IMG>
+<ANSIMG>68A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>70.jpg</IMG>
+<ANSIMG>70A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>71.jpg</IMG>
+<ANSIMG>71A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>72.jpg</IMG>
+<ANSIMG>72A.jpg</ANSIMG>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right SPN</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Solitary_Pulmonary_Nodule</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>79.jpg</IMG>
+<ANSIMG>79A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>82.jpg</IMG>
+<ANSIMG>82A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>84.jpg</IMG>
+<ANSIMG>84A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>85.jpg</IMG>
+<ANSIMG>85A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>88.jpg</IMG>
+<ANSIMG>88A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT><CORRECT/></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>89.jpg</IMG>
+<ANSIMG>89A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>92.jpg</IMG>
+<ANSIMG>92A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>95.jpg</IMG>
+<ANSIMG>95A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT><CORRECT/></ANSWER>
+</QUESTION>
+
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>106.jpg</IMG>
+<ANSIMG>106A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>107.jpg</IMG>
+<ANSIMG>107A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>108.jpg</IMG>
+<ANSIMG>108A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<FEEDBACK/>
+<RANDOM>Evaluation</RANDOM>
+<TEXT>
+Please identify the finding, if any, on the radiograph.&lt;p&gt;
+SPN: Solitary pulmonary nodule.&lt;br&gt;
+FC: Focal Consolidation 
+</TEXT>
+
+<IMG>109.jpg</IMG>
+<ANSIMG>109A.jpg</ANSIMG>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Normal</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left Pneumothorax</TEXT><CORRECT/></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right Pneumothorax</TEXT></ANSWER> 
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right SPN</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Left FC</TEXT></ANSWER>
+<ANSWER><TAG>Focal_Consolidation</TAG><TEXT>Right FC</TEXT></ANSWER>
+</QUESTION>
+
+<QUESTION>
+<TEXT>
+
+Before we finish, we will ask you several brief demographic questions.
+
+</TEXT>
+</QUESTION>
+<QUESTION>
+<TEXT>
+Did you find this module helpful?  Interesting? Write a short comment below.
+&lt;TEXTAREA&gt;
+
+&lt;/TEXTAREA&gt;
+
+</TEXT>
+
+</QUESTION>
+
+<QUESTION>
+<REQUIRED/>
+<TEXT>
+&lt;b&gt;Please rate your agreement with the following statement:&lt;/b&gt;
+&lt;p&gt;
+Traditional methods of learning to differentiate normal from abnormal chest radiographs (i.e.- textbooks, workstation readouts, conferences, etc) are an &lt;b&gt;efficient means of learning&lt;/b&gt;. 
+</TEXT>
+
+<ANSWER><TEXT>Strongly Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Neutral</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Agree</TEXT></ANSWER>
+<ANSWER><TEXT>Strongly Agree</TEXT></ANSWER>
+
+</QUESTION>
+
+<QUESTION>
+<REQUIRED/>
+<TEXT>
+&lt;b&gt;Please rate your agreement with the following statement:&lt;/b&gt;
+&lt;p&gt;
+Traditional methods of learning to differentiate normal from abnormal chest radiographs (i.e.- textbooks, workstation readouts, conferences, etc) &lt;b&gt;can be improved upon&lt;/b&gt;. 
+</TEXT>
+
+<ANSWER><TEXT>Strongly Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Neutral</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Agree</TEXT></ANSWER>
+<ANSWER><TEXT>Strongly Agree</TEXT></ANSWER>
+
+</QUESTION>
+
+<QUESTION>
+<REQUIRED/>
+<TEXT>
+&lt;b&gt;The following question pertains to modules such as the one you just completed, including normal and abnormal radiographs with rapid feedback.&lt;/b&gt;
+&lt;p&gt;
+These modules are an efficient means of learning.
+
+</TEXT>
+
+<ANSWER><TEXT>Strongly Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Neutral</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Agree</TEXT></ANSWER>
+<ANSWER><TEXT>Strongly Agree</TEXT></ANSWER>
+
+</QUESTION>
+
+<QUESTION>
+<REQUIRED/>
+<TEXT>
+&lt;b&gt;The following question pertains to modules such as the one you just completed, including normal and abnormal radiographs with rapid feedback.&lt;/b&gt;
+&lt;p&gt;
+These modules are helpful for training medical students learning to differentiate normal from abnormal chest radiographs.
+</TEXT>
+
+<ANSWER><TEXT>Strongly Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Neutral</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Agree</TEXT></ANSWER>
+<ANSWER><TEXT>Strongly Agree</TEXT></ANSWER>
+
+</QUESTION>
+<QUESTION>
+<REQUIRED/>
+<TEXT>
+&lt;b&gt;The following question pertains to modules such as the one you just completed, including normal and abnormal radiographs with rapid feedback.&lt;/b&gt;
+&lt;p&gt;
+This style could be used, and would be helpful, for learning normal versus abnormal findings in other radiology modalites (for example VQ scans and different forms of intracranial hemorrhage).
+</TEXT>
+
+<ANSWER><TEXT>Strongly Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Disagree</TEXT></ANSWER>
+<ANSWER><TEXT>Neutral</TEXT></ANSWER>
+<ANSWER><TEXT>Somewhat Agree</TEXT></ANSWER>
+<ANSWER><TEXT>Strongly Agree</TEXT></ANSWER>
+
+</QUESTION>
+
+
+</QUIZ>
