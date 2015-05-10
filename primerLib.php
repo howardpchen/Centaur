@@ -17,8 +17,13 @@
 */
 
 session_start();
+/*
+    Connect to your database here.
+*/
 
-$db = new mysqli('mysql.howardpchen.com', 'primer', 'hBDFalEZ4lJGVIkQz8CHX2t2G','howardpchen_primer');
+$db = new mysqli('web.url.com', '', '','');
+
+
 if (mysqli_connect_errno($db)) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
