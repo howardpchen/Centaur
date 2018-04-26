@@ -12,10 +12,16 @@ Try it [here] (http://capricornradiology.org/centaur).
 
 ## Installation
 
-1. Copy files to a web directory.
-1. Create a new database on your MySQL server, and create the table using Centaur.sql
-1. Edit primerLib.php and ensure that the $db variable is properly configured to your MySQL database.
-1. Go to the index.php URL - if you are able to run the test quiz, you are ready to go!
+1. Copy files to a web directory
+2. Create a new database on your MySQL server, and create the table using Centaur.sql
+For example:
+	mysql -u username -p < Centaur.sql
+3. Add data for the test module into database
+	mysql -u username -p < AddTestModule.sql
+4. Edit primerLib.php and ensure that the $db variable is properly configured to your MySQL database.
+For example:
+	$db = new mysqli('localhost', 'username', 'password', 'centaur');
+5. Go to the index.php URL - if you are able to run the test quiz, you are ready to go!
 
 ## How to Create a New Module?
 

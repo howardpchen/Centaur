@@ -1,7 +1,7 @@
 <QUIZ>
 
 <!-- The URL base where we can find the images.  Defaults to root of domain if not set. -->
-<URLBASE>/centaur/howardcxr/images/</URLBASE>
+<URLBASE>/centaur/testquiz/images</URLBASE>
 <NOTRACKMODULE>1101</NOTRACKMODULE>
 <NOCONFIRM/> <!-- Feedback given immediately after clicking a choice -->
 <TIMER>15</TIMER>

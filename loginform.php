@@ -10,7 +10,7 @@ echo <<< END
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#000000">
 <tr>
-<td colspan="3"><strong>Creat Account</strong></td>
+<td colspan="3"><strong>Create Account</strong></td>
 </tr>
 <tr>
 <td width="250">Username</td>

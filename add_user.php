@@ -74,7 +74,7 @@ if ($row['count'] > 0) {    // username exists
     if ($success) {
         $_SESSION['username'] = $myusername;
         echo "<br><br><center>User created successfully.";
-        if  (isset($_POST['moduleid'])) {
+        if  (isset($_POST['moduleid']) && trim($_POST['moduleid'])!='') {
             $moduleID = $_POST['moduleid'];
             echo "<P><A class='button' href='module.php?moduleid=$moduleID'>Continue</A><BR><BR><BR><BR>";
         }

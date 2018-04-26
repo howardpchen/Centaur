@@ -21,7 +21,9 @@ session_start();
     Connect to your database here.
 */
 
-$db = new mysqli('web.url.com', '', '','');
+// exmaple:
+// $db = new mysqli('url', 'db_username', 'db_password','db_name');
+$db = new mysqli('localhost', 'root', '','centaur');
 
 
 if (mysqli_connect_errno($db)) {

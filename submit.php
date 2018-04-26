@@ -75,7 +75,8 @@ foreach ($_POST as $key=>$val)  {
 		}
     }
     else if ($key != "moduleid" && $key != "attemptID") {
-        $notes = "$key => $val";
+	$tmpBuffer = $db->escape_string($val);
+        $notes = "$key => $tmpBuffer";
 		$uniqueID = hash('md5', $attemptID . $notes);
         $sql = "REPLACE INTO responses (UniqueID, Username, GameID, AttemptID, Notes) VALUES ('$uniqueID', '$username', $moduleID, $attemptID, '$notes');";
         if ($username != "notrack") $success = $db->query($sql) or die (mysqli_error($db));
