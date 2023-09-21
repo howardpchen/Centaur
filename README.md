@@ -8,7 +8,7 @@ A set of PHP/MySQL source code to display image and provide an interface for rap
 
 ## Demonstration
 
-Try it [here] (http://capricornradiology.org/centaur).
+Try it [here](http://centaur.howardpchen.com).
 
 ## Installation
 
